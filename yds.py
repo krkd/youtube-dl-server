@@ -114,11 +114,11 @@ parser.add_argument(
 parser.add_argument(
     '--dest_audio', action='store', dest='dest_audio',
     default=abspath('downloads/audio'),
-    help='Folder where yds will download files')
+    help='Folder where yds will download audio files')
 parser.add_argument(
     '--dest_video', action='store', dest='dest_video',
     default=abspath('downloads/video'),
-    help='Folder where yds will download files')
+    help='Folder where yds will download video files')
 parser.add_argument(
     '--sslcert', action='store', dest='certfile', default=abspath('ssl/cert.pem'), help='SSL cert file')
 parser.add_argument(

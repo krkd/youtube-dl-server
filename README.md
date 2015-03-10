@@ -29,11 +29,14 @@ Next you need to open Bookmark manager in your browser and create new bookmark. 
 
 > Note if you provided custom host and port params you need to modify variables HOST and PORT in bookmarklet.js
 
+When you want to download audio from page click on bookmarklet
+
 ## OPTIONS
 
     -h, --help          print this help text and exit
     --host              Host name (default: 127.0.0.1)
     --port              Port number (default: 8070)
-    --dest              Folder where yds will download files (default: ./downloads)
+    --dest-audio        Folder where yds will download audio files (default: ./downloads/audio)
+    --dest-video        Folder where yds will download video files (default: ./downloads/video)
     --certfile          SSL cert file (default: ./ssl/cert.pem)
     --keyfile           SSL key file (default: ./ssl/key.pem)
