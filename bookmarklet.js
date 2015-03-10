@@ -64,7 +64,7 @@ javascript:(
         }
 
         request = new XMLHttpRequest();
-        request.open('GET', 'https://'+ HOST +':' + PORT + '/save?url=' + encodeURIComponent(window.location));
+        request.open('GET', 'https://'+ HOST +':' + PORT + '/save?action=store_audio&url=' + encodeURIComponent(window.location));
         request.onreadystatechange =  function () {
             if (request.readyState == 4) {
                 if (request.status == 200) {

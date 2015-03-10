@@ -4,7 +4,7 @@ if (( "$#" != 1)); then echo "You must provide path to python executable"; exit 
 
 PYTHON_PATH=$1
 
-apt-get install ffmpeg curl youtube-dl
+sudo apt-get install ffmpeg curl youtube-dl
 rc=$?; if (( $rc != 0)); then exit $rc; fi
 
 $PYTHON_PATH -m venv env  && source ./env/bin/activate && pip install -r requirements.txt
