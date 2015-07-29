@@ -1,1 +1,3 @@
-aiohttp==0.14.4
+aiohttp==0.16.6
+chardet==2.3.0
+youtube-dl==2015.7.28
