@@ -1,0 +1,16 @@
+containers:
+
+ ubuntu:
+   setup:
+   - !Ubuntu trusty
+   - !UbuntuUniverse ~
+   - !Install [python3-pip, python3-dev, curl, libav-tools, youtube-dl]
+   - !Py3Install [aiohttp]
+
+commands:
+
+ run: !Command
+   description: Run yds server
+   container: ubuntu
+   run: |
+     python3 yds.py
